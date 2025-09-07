@@ -1,4 +1,4 @@
-package dev.java.CadastroDePessoas.controller;
+package dev.java.CadastroDePessoas.Pessoas.controller;
 import org.springframework.web.bind.annotation.*;
 
 @RestController

@@ -1,0 +1,23 @@
+[33mcommit 701aff5041c27e8a57f199b574191777046e9025[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: DEVthiagoSantos <thiagonascimentodossantos44@gmail.com>
+Date:   Sun Sep 7 00:06:02 2025 -0300
+
+    Alteração no anotation Id e GeneratedValue
+
+[33mcommit 0dbfef51b8af650ef1c6b8562d200875166e29c2[m
+Author: DEVthiagoSantos <thiagonascimentodossantos44@gmail.com>
+Date:   Sat Sep 6 18:53:15 2025 -0300
+
+    Conclui o etapa de criar a entidade e seus atributos, apartir do PessoasModel
+
+[33mcommit a5be5fd00646751607ce4223aa22649d8ccd9bf2[m
+Author: DEVthiagoSantos <thiagonascimentodossantos44@gmail.com>
+Date:   Sat Sep 6 10:46:17 2025 -0300
+
+    Foi criado a controller para poder testar API
+
+[33mcommit 46d021fe8cdbcd8253644fc6c8c5791d9c2d911e[m
+Author: DEVthiagoSantos <thiagonascimentodossantos44@gmail.com>
+Date:   Fri Sep 5 02:21:02 2025 -0300
+
+    first commit

@@ -1,5 +1,6 @@
-package dev.java.CadastroDePessoas.model;
+package dev.java.CadastroDePessoas.Pessoas.model;
 
+import dev.java.CadastroDePessoas.Missoes.model.MissoesModel;
 import jakarta.persistence.*;
 
 // Entity transforma uma classe me uma entidade do banco de dados
@@ -10,9 +11,19 @@ public class PessoaModel {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
     private String nome;
+
     private String email;
+
     private int idade;
+
+    // Uma pessoa tem uma unica missão
+    @ManyToOne
+    @JoinColumn(name = "missoes_id") //Foreing Key, chave estrangeira
+    private MissoesModel missoes;
+
 
     public PessoaModel() {} //NoAllConstructor
 
@@ -21,6 +32,10 @@ public class PessoaModel {
         this.email = email;
         this.idade = idade;
     } // AllConstructor
+
+    public Long getId() {
+        return id;
+    }
 
     public String getNome() {
         return nome;
