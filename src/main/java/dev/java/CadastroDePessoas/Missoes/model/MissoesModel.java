@@ -14,6 +14,7 @@ public class MissoesModel {
     private Long id;
 
     private String nome;
+
     private String dificuldade;
 
     // Uma missão pode ir para muitas pessoas
@@ -45,5 +46,17 @@ public class MissoesModel {
 
     public void setDificuldade(String dificuldade) {
         this.dificuldade = dificuldade;
+    }
+
+    public List<PessoaModel> getPessoas() {
+        return pessoas;
+    }
+
+    public void setPessoas(List<PessoaModel> pessoas) {
+        this.pessoas = pessoas;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 }

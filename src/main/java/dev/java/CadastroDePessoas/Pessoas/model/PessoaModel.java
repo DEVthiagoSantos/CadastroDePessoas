@@ -21,9 +21,8 @@ public class PessoaModel {
 
     // Uma pessoa tem uma unica missão
     @ManyToOne
-    @JoinColumn(name = "missoes_id") //Foreing Key, chave estrangeira
-    private MissoesModel missoes;
-
+    @JoinColumn(name = "missao_id") //Foreing Key, chave estrangeira
+    private MissoesModel missao;
 
     public PessoaModel() {} //NoAllConstructor
 
@@ -59,5 +58,17 @@ public class PessoaModel {
 
     public void setIdade(int idade) {
         this.idade = idade;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public MissoesModel getMissao() {
+        return missao;
+    }
+
+    public void setMissao(MissoesModel missoes) {
+        this.missao = missoes;
     }
 }
