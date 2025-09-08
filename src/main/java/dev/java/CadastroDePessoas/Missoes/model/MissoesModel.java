@@ -1,5 +1,6 @@
 package dev.java.CadastroDePessoas.Missoes.model;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import dev.java.CadastroDePessoas.Pessoas.model.PessoaModel;
 import jakarta.persistence.*;
 
@@ -18,7 +19,8 @@ public class MissoesModel {
     private String dificuldade;
 
     // Uma missão pode ir para muitas pessoas
-    @OneToMany(mappedBy = "missoes")
+    @OneToMany(mappedBy = "missao")
+    @JsonManagedReference
     private List<PessoaModel> pessoas;
 
     public MissoesModel() {}

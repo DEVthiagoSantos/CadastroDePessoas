@@ -1,5 +1,6 @@
 package dev.java.CadastroDePessoas.Pessoas.model;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import dev.java.CadastroDePessoas.Missoes.model.MissoesModel;
 import jakarta.persistence.*;
 
@@ -21,7 +22,8 @@ public class PessoaModel {
 
     // Uma pessoa tem uma unica missão
     @ManyToOne
-    @JoinColumn(name = "missao_id") //Foreing Key, chave estrangeira
+    @JoinColumn(name = "missao_id")//Foreing Key, chave estrangeira
+    @JsonBackReference
     private MissoesModel missao;
 
     public PessoaModel() {} //NoAllConstructor
